@@ -2,7 +2,9 @@
 .env
 
 # cache
-writable/
+/writable/
+/assets/cover/
+/assets/video/
 
 ## OS Files
 # Windows
