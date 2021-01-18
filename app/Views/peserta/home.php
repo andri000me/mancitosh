@@ -1,5 +1,5 @@
 <?php
-$this->extend('layout');
+$this->extend('peserta/layout');
 $this->section('content');
 ?>
 

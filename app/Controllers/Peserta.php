@@ -15,7 +15,6 @@ class Peserta extends Controller
 	public function index( $page = 'index')
 	{
 		$data = array(
-			'navbar' => false,
 			'footer' => false
 		);
 		return view('peserta/home', $data);
@@ -28,7 +27,6 @@ class Peserta extends Controller
 			$data = array(
 				'robot_peserta' => $this->robotPeserta,
 				'berkas' => $this->berkas,
-				'navbar' => false,
 				'footer' => false,
 				'cssAssets' => ['bootstrap-table.min'],
 				'jsAssets'  => ['bootstrap-table.min']
@@ -43,7 +41,6 @@ class Peserta extends Controller
 				$data = array(
 					'peserta' => $peserta,
 					'berkas' => $this->berkas,
-					'navbar' => false,
 					'footer' => false
 				);
 				return view( 'peserta/robot-detail', $data );
@@ -62,7 +59,6 @@ class Peserta extends Controller
 			$data = array(
 				'robot_peserta' => $this->vlogPeserta,
 				'berkas' => $this->berkas,
-				'navbar' => false,
 				'footer' => false,
 				'cssAssets' => ['bootstrap-table.min'],
 				'jsAssets'  => ['bootstrap-table.min']
@@ -77,7 +73,6 @@ class Peserta extends Controller
 				$data = array(
 					'peserta' => $peserta,
 					'berkas' => $this->berkas,
-					'navbar' => false,
 					'footer' => false
 				);
 				return view( 'peserta/vlog-detail', $data );
@@ -112,7 +107,6 @@ class Peserta extends Controller
 				$data = array(
 					'detail' => $detail,
 					'peserta' => $peserta,
-					'navbar' => false,
 					'footer' => false
 				);
 				return view( 'peserta/upload-detail', $data );

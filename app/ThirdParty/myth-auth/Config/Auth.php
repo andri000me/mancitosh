@@ -27,10 +27,10 @@ class Auth extends BaseConfig
     //--------------------------------------------------------------------
 
     public $views = [
-        // 'login' => 'Myth\Auth\Views\login',
-        // 'register' => 'Myth\Auth\Views\register',
-        'login' => '\App\Views\auth\login',
-        'register' => '\App\Views\auth\register',
+        'login' => 'Myth\Auth\Views\login',
+        'register' => 'Myth\Auth\Views\register',
+        // 'login' => '\App\Views\auth\login',
+        // 'register' => '\App\Views\auth\register',
         'forgot' => 'Myth\Auth\Views\forgot',
         'reset' => 'Myth\Auth\Views\reset',
         'emailForgot' => 'Myth\Auth\Views\emails\forgot',
@@ -115,7 +115,8 @@ class Auth extends BaseConfig
     // When enabled, every registered user will receive an email message
     // with a special link he have to confirm to activate his account.
     //
-    public $requireActivation = 'Myth\Auth\Authentication\Activators\EmailActivator';
+    // public $requireActivation = 'Myth\Auth\Authentication\Activators\EmailActivator';
+    public $requireActivation = false;
 
     //--------------------------------------------------------------------
     // Allow to reset password via email
@@ -123,7 +124,8 @@ class Auth extends BaseConfig
     // When enabled, every user will have the option to reset his password
     // via specified resetter. Default setting is email.
     //
-    public $activeResetter = 'Myth\Auth\Authentication\Resetters\EmailResetter';
+    // public $activeResetter = 'Myth\Auth\Authentication\Resetters\EmailResetter';
+    public $activeResetter = false;
 
     //--------------------------------------------------------------------
     // Allow Persistent Login Cookies (Remember me)
