@@ -25,6 +25,7 @@
 					<?= anchor('upload', 'Pengumpulan Karya', ['class' => 'nav-link']) ?>
 
 				</li>
+				<li class="nav-item"><?= anchor('qna', 'Q&A', ['class' => 'nav-link']) ?></li>
 			</ul>
 			<ul class="navbar-nav ml-lg-auto ml-xl-0">
 				<li class="nav-item dropdown">

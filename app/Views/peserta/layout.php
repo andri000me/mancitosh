@@ -30,10 +30,10 @@ $site = new \Config\Site();
 	</head>
 	<body class="d-flex flex-column h-100">
 		<?php
-		if ( !isset($navbar) OR $navbar == TRUE )
-		{
-			echo $this->include('peserta/navbar');
-		}
+		// if ( !isset($navbar) OR $navbar == TRUE )
+		// {
+		// 	echo $this->include('peserta/navbar');
+		// }
 		?>
 
 		<?= $this->renderSection('content') ?>

@@ -47,7 +47,7 @@ class Daftar extends Controller
 			);
 			$robotPeserta->save( $saveData );
 
-			return redirect()->back()->with( 'message', $this->bs_alert( 'Pendaftaran menunggu validasi, info lebih lanjut akan dihubungi panitia melalui WhatsApp yang terdaftar.' ) );
+			return redirect()->back()->with( 'message', $this->bs_alert( 'Selamat anda sudah terdaftar sebagai peserta lomba robot. Informasi lebih lanjut akan dihubungi panitia melalui WhatsApp.' ) );
 		} else {
 			return redirect()->back()->withInput();
 		}
@@ -94,7 +94,7 @@ class Daftar extends Controller
 			);
 			$robotPeserta->save( $saveData );
 
-			return redirect()->back()->with( 'message', $this->bs_alert( 'Pendaftaran menunggu validasi, info lebih lanjut akan dihubungi panitia melalui WhatsApp yang terdaftar.' ) );
+			return redirect()->back()->with( 'message', $this->bs_alert( 'Selamat anda sudah terdaftar sebagai peserta lomba vlog. Informasi lebih lanjut akan dihubungi panitia melalui WhatsApp.' ) );
 		} else {
 			return redirect()->back()->withInput();
 		}

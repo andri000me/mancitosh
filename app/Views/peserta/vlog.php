@@ -12,11 +12,11 @@ $this->section('content');
 	<table data-toggle="table" data-search="true" data-pagination="true">
 			<thead>
 				<tr>
-					<th data-sortable="true">No.</th>
+					<th>No.</th>
 					<th data-sortable="true">Nama Peserta</th>
 					<th data-sortable="true">Asal Sekolah</th>
 					<th>WhatsApp</th>
-					<th>Upload</th>
+					<th data-sortable="true">Upload</th>
 				</tr>
 			</thead>
 			<tbody>

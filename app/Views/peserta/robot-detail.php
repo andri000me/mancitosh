@@ -9,6 +9,9 @@ $this->section('content');
 			<li class="breadcrumb-item"><?= anchor('peserta/robot', 'Lomba Robot') ?></li>
 			<li class="breadcrumb-item active" aria-current="page">Data</li>
 		</ol>
+
+		<?= session('message') ?>
+
 		<dl class="row">
 			<dt class="col-sm-4 col-md-3 text-sm-right">ID Peserta</dt>
 			<dd class="col-sm-8 col-md-9"><?= $peserta->id ?></dd>
@@ -32,6 +35,8 @@ $this->section('content');
 
 			<dt class="col-sm-4 col-md-3 text-sm-right">Tanggal Pendaftaran</dt>
 			<dd class="col-sm-8 col-md-9"><?= $peserta->created_at ?></dd>
+
+			<dd class="col-sm-8 col-md-9 offset-sm-4 offset-md-3 mt-3"><?= anchor('peserta/update/robot/'.$peserta->id, 'Edit Data Peserta', ['class' => 'btn btn-warning']) ?></dd>
 
 		</dl>
 	</div>
