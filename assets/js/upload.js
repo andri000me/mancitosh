@@ -1,3 +1,5 @@
 $(document).ready(function () {
-	bsCustomFileInput.init()
+	bsCustomFileInput.init();
+
+	$("#nav-upload").addClass("active");
 })

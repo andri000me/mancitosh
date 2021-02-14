@@ -21,7 +21,7 @@
 
 					</div>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item" id="nav-upload">
 					<?= anchor('upload', 'Pengumpulan Karya', ['class' => 'nav-link']) ?>
 
 				</li>
